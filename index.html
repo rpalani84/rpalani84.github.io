@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Palanikumar R | IT & Data Operations Professional</title>
+<meta name="description" content="IT and data operations professional with 22 years in healthcare data, EDI and delivery management. Open to remote roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0E2440;
+  --navy-2: #163457;
+  --paper: #F4F6F9;
+  --surface: #FFFFFF;
+  --ink: #17202E;
+  --muted: #5A6779;
+  --line: #DDE3EB;
+  --accent: #1B6F86;
+  --accent-soft: #E3F0F4;
+  --gold: #C8A24A;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0A1627; --surface: #112038; --ink: #E8EEF6; --muted: #9DACC0;
+    --line: #223652; --accent: #5BB8D0; --accent-soft: #14304A; --navy: #08182C; --navy-2: #102A48;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0A1627; --surface: #112038; --ink: #E8EEF6; --muted: #9DACC0;
+  --line: #223652; --accent: #5BB8D0; --accent-soft: #14304A; --navy: #08182C; --navy-2: #102A48;
+}
+html { scroll-padding-top: 76px; scroll-behavior: smooth; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.65; -webkit-text-size-adjust: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+h1, h2, h3 { font-family: var(--serif); }
+
+/* Top bar */
+.bar { position: sticky; top: 0; z-index: 10; background: var(--navy); color: #fff; border-bottom: 1px solid rgba(255,255,255,.1); }
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 62px; }
+.brand { font-family: var(--serif); font-weight: 600; font-size: 1.1rem; text-decoration: none; white-space: nowrap; }
+.bar nav { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.bar nav::-webkit-scrollbar { display: none; }
+.bar nav a { text-decoration: none; color: #C5D2E3; padding: 8px 12px; border-radius: 6px; font-size: .95rem; font-weight: 500; white-space: nowrap; }
+.bar nav a:hover { color: #fff; background: rgba(255,255,255,.08); }
+
+/* Hero */
+.hero { background: linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff; padding: 72px 0 0; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 56px; align-items: start; padding-bottom: 64px; }
+.hero h1 { font-weight: 700; font-size: clamp(2.5rem, 6.5vw, 4.4rem); line-height: 1.04; letter-spacing: -.015em; margin: 0 0 20px; }
+.hero .role { font-family: var(--serif); font-size: clamp(1.2rem, 2.4vw, 1.5rem); color: #E7D3A0; margin: 0 0 22px; font-weight: 500; line-height: 1.35; }
+.hero .lede { color: #CFDAE8; max-width: 60ch; margin: 0 0 32px; font-size: 1.05rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { display: inline-block; padding: 13px 24px; border-radius: 6px; font-weight: 600; text-decoration: none; border: 1.5px solid transparent; transition: background .15s, border-color .15s; }
+.btn.primary { background: var(--gold); color: #1A1405; }
+.btn.primary:hover { background: #D8B55E; }
+.btn.ghost { border-color: rgba(255,255,255,.4); color: #fff; }
+.btn.ghost:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+
+.card-id { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.16); border-radius: 12px; padding: 28px; }
+.monogram { width: 76px; height: 76px; border-radius: 50%; background: var(--gold); color: #1A1405; display: grid; place-items: center; font-family: var(--serif); font-weight: 700; font-size: 1.9rem; margin-bottom: 18px; }
+.card-id dl { margin: 0; display: grid; gap: 14px; }
+.card-id dt { color: #9FB2CB; font-size: .88rem; }
+.card-id dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
+.card-id a { text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.35); }
+.card-id a:hover { border-bottom-color: var(--gold); }
+.status { display: inline-flex; align-items: center; gap: 8px; }
+.status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: #4CC38A; flex: none; }
+
+/* Stats */
+.stats { background: var(--surface); border-bottom: 1px solid var(--line); }
+.stats .wrap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.stat { padding: 26px 20px; border-left: 1px solid var(--line); }
+.stat:first-child { border-left: 0; padding-left: 0; }
+.stat b { display: block; font-family: var(--serif); font-size: 1.9rem; line-height: 1.1; color: var(--accent); }
+.stat span { color: var(--muted); font-size: .95rem; }
+
+/* Sections */
+section { padding: 72px 0; }
+section.alt { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.head { max-width: 62ch; margin-bottom: 40px; }
+.head h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.15; margin: 0 0 10px; letter-spacing: -.01em; }
+.head p { margin: 0; color: var(--muted); }
+
+/* Work */
+.work { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.item { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: 8px; padding: 26px; }
+.item.wide { grid-column: 1 / -1; }
+.item h3 { margin: 0 0 4px; font-size: 1.28rem; line-height: 1.25; }
+.item .meta { color: var(--muted); font-size: .92rem; margin: 0 0 12px; }
+.item p { margin: 0; color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+.chips li { background: var(--accent-soft); color: var(--accent); font-weight: 600; font-size: .88rem; padding: 4px 12px; border-radius: 999px; }
+.clients { margin-top: 28px; padding: 20px 24px; border-left: 3px solid var(--gold); background: var(--surface); border-radius: 0 8px 8px 0; color: var(--muted); }
+.clients strong { color: var(--ink); }
+
+/* Timeline */
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline > li { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 0 40px; padding-bottom: 34px; }
+.timeline > li:last-child { padding-bottom: 0; }
+.when { color: var(--muted); font-weight: 600; padding-top: 4px; font-size: .98rem; }
+.what { position: relative; padding-left: 30px; border-left: 2px solid var(--line); padding-bottom: 4px; }
+.timeline > li:last-child .what { border-left-color: transparent; }
+.what::before { content: ""; position: absolute; left: -7px; top: 9px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); }
+.what h3 { margin: 0; font-size: 1.28rem; line-height: 1.25; }
+.org { color: var(--muted); margin: 2px 0 10px; font-size: .95rem; }
+.what ul { margin: 0; padding-left: 18px; }
+.what ul li { padding: 0 0 4px; }
+.what ul li::marker { color: var(--accent); }
+
+/* Skills */
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.skills .item h3 { margin-bottom: 14px; font-size: 1.15rem; }
+.skills ul { list-style: none; margin: 0; padding: 0; }
+.skills ul li { padding: 8px 0; border-top: 1px solid var(--line); }
+.skills ul li:first-child { border-top: 0; padding-top: 0; }
+
+/* Learning + education */
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.two .item h3 { margin-bottom: 14px; }
+.edu p + p { margin-top: 12px; }
+.edu b { display: block; font-weight: 600; }
+.edu span { color: var(--muted); font-size: .95rem; }
+
+/* Contact */
+.contact { background: var(--navy); color: #fff; padding: 80px 0; }
+.contact h2 { font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.12; margin: 0 0 14px; max-width: 20ch; }
+.contact p { color: #CFDAE8; max-width: 56ch; margin: 0 0 30px; }
+.contact .actions + ul { list-style: none; margin: 32px 0 0; padding: 24px 0 0; border-top: 1px solid rgba(255,255,255,.16); display: flex; flex-wrap: wrap; gap: 8px 40px; color: #CFDAE8; }
+.contact li b { color: #fff; font-weight: 600; margin-right: 8px; }
+
+footer { background: var(--navy); color: #8EA2BE; padding: 20px 0 28px; font-size: .9rem; border-top: 1px solid rgba(255,255,255,.1); }
+
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .stats .wrap { grid-template-columns: 1fr; }
+  .stat { border-left: 0; padding-left: 0; }
+  .stat + .stat { border-top: 1px solid var(--line); }
+  .skills { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .hero { padding-top: 44px; }
+  .work, .two { grid-template-columns: 1fr; }
+  .timeline > li { grid-template-columns: 1fr; gap: 6px; }
+  .when { padding-left: 30px; padding-top: 0; }
+  section { padding: 52px 0; }
+  .brand { font-size: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+@media print { .bar { position: static; } }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Palanikumar R</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#learning">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Palanikumar R</h1>
+        <p class="role">IT and data operations professional, healthcare data and delivery</p>
+        <p class="lede">Twenty-two years at Exela Technologies, from high-volume data entry to technical and delivery roles. I know how healthcare data is captured, mapped, checked and delivered, and how to keep work on schedule and on quality. I am now adding Python, machine learning and agentic AI, and I am looking for remote roles.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:rpalani84@gmail.com">Email me</a>
+          <a class="btn ghost" href="#experience">View experience</a>
+        </div>
+      </div>
+      <aside class="card-id" aria-label="Summary">
+        <div class="monogram" aria-hidden="true">PR</div>
+        <dl>
+          <div><dt>Availability</dt><dd class="status">Open to remote and work-from-home roles</dd></div>
+          <div><dt>Location</dt><dd>Tenkasi, Tamil Nadu, India</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:rpalani84@gmail.com">rpalani84@gmail.com</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+917401534889">+91 74015 34889</a></dd></div>
+        </dl>
+      </aside>
+    </div>
+    <div class="stats">
+      <div class="wrap">
+        <div class="stat"><b>22 years</b><span>at Exela Technologies</span></div>
+        <div class="stat"><b>6 roles</b><span>from associate to delivery manager</span></div>
+        
+        <div class="stat"><b>8 clients</b><span>across healthcare and government</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="head">
+        <h2>Work I have done</h2>
+        <p>Healthcare data operations for U.S. payers and health systems, delivered from Chennai.</p>
+      </div>
+      <div class="work">
+        <article class="item">
+          <h3>Change and internal request delivery</h3>
+          <p class="meta">Delivery Manager, 2022 to 2024</p>
+          <p>Coordinated delivery of high-volume Customer Change Requests and Internal Customer Requests. Followed schedules and priorities, checked quality and timelines, and worked with stakeholders to clear issues early.</p>
+        </article>
+        <article class="item">
+          <h3>Data mapping and output configuration</h3>
+          <p class="meta">Senior Technical Lead, 2018 to 2022</p>
+          <p>Turned business requirements into technical configurations, then tested, validated and troubleshot them to support healthcare EDI operations.</p>
+          <ul class="chips"><li>ANSI X12</li><li>NSF</li><li>XML</li><li>XLS</li><li>TEXT</li></ul>
+        </article>
+        <article class="item">
+          <h3>UnitedHealth Group projects</h3>
+          <p class="meta">Technical Lead, 2011 to 2017</p>
+          <p>Coordinated with the people involved in UnitedHealth Group projects to get work done on time. Tracked quality, productivity and delivery schedules, supported issue resolution, and held service-level and quality standards.</p>
+        </article>
+        <article class="item">
+          <h3>Firefly data-processing application</h3>
+          <p class="meta">System Analyst, 2006 to 2008</p>
+          <p>Supported the development and enhancement of Firefly, working with healthcare operational data and the application processes around it.</p>
+        </article>
+        <article class="item wide">
+          <h3>Healthcare data entry and quality</h3>
+          <p class="meta">Senior Processor, 2004 to 2006</p>
+          <p>Processed healthcare client data, monitored quality, and used VIKING data-capture tools to raise productivity.</p>
+        </article>
+      </div>
+      <p class="clients"><strong>Clients and projects:</strong> UnitedHealth Group, AmeriHealth, Texas State Government Project, BCBSNC, Lumeris, BSC, HMS and Arizona Healthcare Systems.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="alt">
+    <div class="wrap">
+      <div class="head">
+        <h2>Experience</h2>
+        <p>One employer, Exela Technologies in Chennai, with a step up in responsibility every few years.</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <div class="when">Sep 2022 – Aug 2024</div>
+          <div class="what">
+            <h3>Delivery Manager</h3>
+            <p class="org">Exela Technologies, Chennai</p>
+            <ul>
+              <li>Managed delivery of high-volume Customer Change Requests (CCRs) and Internal Customer Requests (ICRs).</li>
+              <li>Coordinated schedules, priorities and delivery activities with the people involved.</li>
+              <li>Monitored quality, timelines and operational requirements.</li>
+              <li>Worked with stakeholders to resolve issues and keep delivery smooth.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Jan 2018 – Aug 2022</div>
+          <div class="what">
+            <h3>Senior Technical Lead</h3>
+            <p class="org">Exela Technologies, Chennai</p>
+            <ul>
+              <li>Managed data mapping and output configurations for ANSI X12, NSF, XML, XLS and TEXT.</li>
+              <li>Ran configuration testing, data validation, troubleshooting and quality checks.</li>
+              <li>Gathered requirements and converted them into technical configurations.</li>
+              <li>Supported healthcare data processing and EDI operations.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Sep 2011 – Dec 2017</div>
+          <div class="what">
+            <h3>Technical Lead</h3>
+            <p class="org">Exela Technologies, Chennai</p>
+            <ul>
+              <li>Coordinated with various people to get work done on UnitedHealth Group (UHG) projects.</li>
+              <li>Monitored quality, productivity and delivery schedules.</li>
+              <li>Supported issue resolution and operational tracking.</li>
+              <li>Maintained high service-level and quality standards.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Sep 2006 – Nov 2008</div>
+          <div class="what">
+            <h3>System Analyst / Senior System Analyst</h3>
+            <p class="org">Exela Technologies, Chennai</p>
+            <ul>
+              <li>Supported development and enhancement of the Firefly data-processing application.</li>
+              <li>Worked with healthcare operational data and application processes.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Apr 2004 – Sep 2006</div>
+          <div class="what">
+            <h3>Senior Processor / Processor</h3>
+            <p class="org">Exela Technologies, Chennai</p>
+            <ul>
+              
+              <li>Processed data and monitored quality for healthcare clients.</li>
+              <li>Used VIKING data-capture tools to improve productivity.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Jan 2002 – Apr 2004</div>
+          <div class="what">
+            <h3>Junior Processor / Junior Associate</h3>
+            <p class="org">Exela Technologies, Chennai</p>
+            <ul>
+              <li>Did high-volume data entry and verification.</li>
+              <li>Kept data accuracy and quality standards, and met productivity and quality targets consistently.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="head">
+        <h2>Skills</h2>
+        <p>What I do well today.</p>
+      </div>
+      <div class="skills">
+        <div class="item">
+          <h3>Data operations</h3>
+          <ul>
+            <li>Data entry and processing</li>
+            <li>Data verification and quality control</li>
+            <li>Data validation and mapping</li>
+            <li>Document processing</li>
+            <li>Reporting and record management</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Technical</h3>
+          <ul>
+            <li>SQL and MySQL</li>
+            <li>Unix</li>
+            <li>Excel and structured data processing</li>
+            <li>ANSI X12, NSF, XML, XLS, TEXT</li>
+            <li>Healthcare data and EDI operations</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Coordination</h3>
+          <ul>
+            <li>Cross-team coordination</li>
+            <li>Issue resolution and operational tracking</li>
+            <li>Requirements gathering</li>
+            <li>Stakeholder coordination</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="alt">
+    <div class="wrap">
+      <div class="head">
+        <h2>Projects</h2>
+        <p>Hands-on work from my AI learning.</p>
+      </div>
+      <article class="item">
+        <h3>AI Helpdesk Ticket Router</h3>
+        <p class="meta">AI project built with ChatGPT's help, submitted to my mentor for verification</p>
+        <p>An AI-powered IT helpdesk system that runs locally, with no paid cloud AI service. When a ticket is created, a local Ollama model (Qwen2.5) reads it and suggests the category, priority, summary and support team. The system then pulls troubleshooting steps from a knowledge base using retrieval-augmented generation (RAG).</p>
+        <ul style="margin:14px 0 0;padding-left:18px">
+          <li>Full ticket lifecycle: create, assign, route, track, resolve, close and reopen, with history and audit tracking.</li>
+          <li>SLA tracking by priority, including due times and breach identification.</li>
+          <li>Reopened tickets move up one priority level and get a fresh SLA.</li>
+          <li>Role-based access for admin, supervisor, operator and guest, with password hashing and sessions.</li>
+        </ul>
+        <ul class="chips"><li>Python</li><li>Streamlit</li><li>Ollama</li><li>Qwen2.5</li><li>ChromaDB</li><li>RAG</li><li>Pandas</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="learning">
+    <div class="wrap">
+      <div class="head">
+        <h2>Learning and education</h2>
+        <p>Adding AI and automation to a data operations background.</p>
+      </div>
+      <div class="two">
+        <div class="item">
+          <h3>Currently learning</h3>
+          <ul class="chips" style="margin-top:0">
+            <li>Python for AI application development</li>
+            <li>Machine learning</li>
+            <li>Agentic AI</li>
+            <li>AI-assisted automation</li>
+            <li>Google Colab</li>
+            <li>Kaggle</li>
+            <li>ChatGPT, Gemini, Claude</li>
+            <li>Ollama</li>
+          </ul>
+        </div>
+        <div class="item edu">
+          <h3>Education</h3>
+          <p><b>Diploma in Computer Applications (DCA)</b><span>Hardware and networking</span></p>
+          <p><b>Higher Secondary, 2001</b><span>Maths and Biology, Government Boys Higher Secondary School</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Open to remote roles in data operations</h2>
+      <p>If you have work that needs careful data handling, quality control or delivery coordination, get in touch.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:rpalani84@gmail.com">Email me</a>
+        <a class="btn ghost" href="tel:+917401534889">Call +91 74015 34889</a>
+      </div>
+      <ul>
+        <li><b>Email</b>rpalani84@gmail.com</li>
+        <li><b>Location</b>Tenkasi, Tamil Nadu 627758</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Palanikumar R</div>
+</footer>
+
+</body>
+</html>
